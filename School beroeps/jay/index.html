@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzie bitches</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://imgs.search.brave.com/_1v-_FEp92KD3D_grCZMqfX3VLqbMl0mGk8XKgU1cGQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzE5LzM0LzU1Lzk4/LzM2MF9GXzE5MzQ1/NTk4NDBfTHdETEp3/YWZhOEw1cnFtS0ZL/dmpMemEzcVROcWl3/MEguanBn">
+</head>
+<body>
+<div id="quiz-container">
+    <div id="setup-screen">
+        <a href="/home.html">
+    <button class="home-btn">Terug naar Home</button>
+</a>
+        <h1>Welkom bij QUIZZIE</h1>
+        <p>Thema: Bevolking & Samenleving</p>
+        <input type="text" id="username" placeholder="Vul je naam in" style="padding: 10px; margin-bottom: 20px; width: 80%;"><br>
+        <button onclick="startQuiz()">Start de Quiz</button>
+    </div>
+
+    <div id="quiz-screen" style="display:none;">
+        <div class="progress-bar"><div id="progress"></div></div>
+        <div id="question-text" class="question"></div>
+        <div id="options-container" class="options"></div>
+    </div>
+
+    <div id="result-screen">
+        <h2 id="congrats-text">Goed gedaan!</h2>
+        <div class="score" id="final-score">0/10</div>
+        <p>Bedankt voor het spelen van de quiz namens de Gemeente Otterdam.</p>
+        <button onclick="location.reload()">Opnieuw Spelen</button>
+    </div>
+</div>
+    
+</body>
+<script src="script.js"></script>
+</html>
