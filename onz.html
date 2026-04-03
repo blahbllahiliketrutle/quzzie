@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Over Ons</title>
+
+<style>
+:root {
+    --background: #DADADA;
+    --primary: #0E2C6F;
+    --secondary: #5F88C9;
+    --text: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.about-container {
+    background: var(--primary);
+    padding: 2.5rem;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Title */
+h1 {
+    color: var(--text);
+    margin-bottom: 15px;
+}
+
+/* Text */
+p {
+    color: var(--text);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Team section */
+.team {
+    margin-top: 20px;
+}
+
+.team h2 {
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.team-members {
+    display: grid;
+    gap: 10px;
+}
+
+/* Member cards */
+.member {
+    background: var(--secondary);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--text);
+}
+
+/* Back button */
+.back-btn {
+    margin-top: 20px;
+    padding: 12px;
+    border: 2px solid var(--text);
+    background: transparent;
+    color: var(--text);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: var(--text);
+    color: var(--primary);
+    transform: scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<div class="about-container">
+    <h1>Over Ons 👋</h1>
+
+    <p>
+        Welkom bij onze quiz website! Wij hebben deze site gemaakt om leren leuker
+        en interactiever te maken. Test je kennis met verschillende quizzen en
+        probeer je score te verbeteren!
+    </p>
+
+    <p>
+        Ons doel is om een eenvoudige maar leuke ervaring te bieden voor iedereen,
+        of je nu speelt voor plezier of om iets nieuws te leren.
+    </p>
+
+    <div class="team">
+        <h2>Ons Team</h2>
+        <div class="team-members">
+            <div class="member">👤 Bray</div>
+            <div class="member">👤 gijs</div>
+            <div class="member">👤 jay</div>
+        </div>
+    </div>
+
+    <button class="back-btn" onclick="location.href='home.html'">
+        ⬅ Terug naar Home
+    </button>
+</div>
+
+</body>
+</html>

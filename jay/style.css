@@ -1,0 +1,114 @@
+:root {
+    --primary: #7F0D10;     /* deep red */
+    --secondary: #E23B3B;   /* bright red */
+    --background: #8F8F8F;  /* gray */
+    --text: #ffffff;        /* white for contrast */
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#quiz-container {
+    background-color: var(--primary);
+    padding: 2rem;
+    border-radius: 17px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#progress {
+    height: 100%;
+    background: var(--secondary);
+    width: 0%;
+    transition: width 0.3s;
+}
+
+h1 { 
+    color: var(--secondary); 
+    font-size: 1.5rem; 
+}
+
+.question { 
+    font-size: 1.2rem; 
+    margin-bottom: 1.5rem; 
+    font-weight: 600; 
+}
+
+.options {
+    display: grid;
+    gap: 10px;
+}
+
+button {
+    padding: 12px;
+    border: 2px solid var(--secondary);
+    background: transparent;
+    color: var(--white);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+#result-screen { display: none; }
+
+.score { 
+    font-size: 3rem; 
+    color: var(--secondary); 
+    font-weight: bold; 
+}
+
+.badge {
+    width: 100px;
+    margin: 20px auto;
+    display: block;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.home-btn {
+    margin-top: 15px;
+    padding: 12px;
+    border: 2px solid var(--white);
+    background: transparent;
+    color: var(--white);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+    background: var(--white);
+    color: var(--primary);
+    transform: scale(1.05);
+}
